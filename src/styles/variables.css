@@ -1,0 +1,47 @@
+/* variables.css */
+:root {
+  /* Light Mode */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F5F5F5;
+  --color-bg-tertiary: rgba(0, 0, 0, 0.03);
+  
+  --color-text-primary: #000000;
+  --color-text-secondary: #666666;
+  --color-text-tertiary: #999999;
+  
+  --color-border-primary: #E5E5E5;
+  --color-border-secondary: #CCCCCC;
+  
+  --color-accent: #111111;
+  
+  /* Dark Mode */
+  --color-bg-primary-dark: #0A0A0A;
+  --color-bg-secondary-dark: #111111;
+  --color-bg-tertiary-dark: rgba(255, 255, 255, 0.03);
+  
+  --color-text-primary-dark: #FFFFFF;
+  --color-text-secondary-dark: #999999;
+  --color-text-tertiary-dark: #666666;
+  
+  --color-border-primary-dark: #333333;
+  --color-border-secondary-dark: #555555;
+  
+  --color-accent-dark: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: var(--color-bg-primary-dark);
+    --color-bg-secondary: var(--color-bg-secondary-dark);
+    --color-bg-tertiary: var(--color-bg-tertiary-dark);
+    
+    --color-text-primary: var(--color-text-primary-dark);
+    --color-text-secondary: var(--color-text-secondary-dark);
+    --color-text-tertiary: var(--color-text-tertiary-dark);
+    
+    --color-border-primary: var(--color-border-primary-dark);
+    --color-border-secondary: var(--color-border-secondary-dark);
+    
+    --color-accent: var(--color-accent-dark);
+  }
+}
