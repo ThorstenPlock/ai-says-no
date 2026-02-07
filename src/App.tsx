@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AppProvider, useApp } from './context/AppContext';
 import { StartScreen } from './components/StartScreen';
 import { AnalysisScreen } from './components/AnalysisScreen';
@@ -120,6 +121,7 @@ function App() {
   return (
     <AppProvider>
       <AppContent />
+      <SpeedInsights />
     </AppProvider>
   );
 }
